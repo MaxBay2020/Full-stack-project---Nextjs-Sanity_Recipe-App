@@ -1,5 +1,6 @@
 import {sanityClient} from "../../lib/sanity.server";
-import {urlFor,usePreviewSubscription, PortableText} from "../../lib/sanity"
+import {urlFor,usePreviewSubscription} from "../../lib/sanity"
+import {PortableText} from '@portabletext/react'
 
 // 查找指定的slug名称的recipe，返回的是只有一个元素的数组，并取得指定的字段
 const recipeQuery=`*[_type=='recipe' && slug.current == $slug][0]{
